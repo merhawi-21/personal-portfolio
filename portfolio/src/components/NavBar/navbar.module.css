@@ -1,0 +1,140 @@
+
+.navbar {
+  background: rgb(30, 30, 30);
+ 
+  height: 5rem;
+  width: 100vw;
+  margin: 0;
+  padding: 1rem 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  box-sizing: border-box;
+  box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.3); /* Bottom shadow */
+  transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+.navbar:hover {
+  background: rgb(45, 45, 45); /* Darker shade on hover */
+  transform: translateY(-5px); /* Slight upward movement on hover */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Enhanced shadow for hover effect */
+}
+
+
+.logo{
+  height: 4rem;
+  width: 4rem;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.logo:hover{
+  transform: rotate(-10deg);
+
+}
+
+ /* .desktopmenu{
+
+
+} */
+
+/* .menubtn{
+  
+}  */
+
+.menuIcon{
+  object-fit: cover;
+  height: 1.5rem;
+  width: 1.5rem;
+  margin: 0.5rem;
+}
+
+.menuListItem{
+  margin: 1rem;
+  cursor: pointer;
+
+}
+
+.menuListItem:hover{
+  color: yellow;
+  padding-bottom: 0.5rem;
+  border-bottom:3px solid yellow;
+}
+
+.menubtn{
+  background: yellowgreen;
+  color: black;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem;
+  border-radius:2rem ;
+}
+
+.menubtn:hover{
+  background-color: rgb(146, 127, 39);
+  cursor: pointer;
+}
+
+.active{
+  color: yellowgreen;
+  padding: 0.5rem;
+  border-bottom: 3px solid 0.5rem;
+}
+
+.navMenu{
+  position: absolute;
+  top: 4rem;
+  right: 0;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+  height: fit-content ;
+  min-width: 5rem;
+  
+  border-radius: 1rem;
+}
+
+.mobMenu{
+  display: none;
+  height: 1.8rem;
+  object-fit: cover;
+}
+
+.mobMenu:hover{
+  cursor: pointer;
+}
+
+.listItem{
+  color: white;
+  cursor: pointer;
+  
+}
+
+/* media querry */
+
+
+
+
+@media screen and (max-width:640px) {
+
+  .mobMenu{
+    display: flex;
+  }
+
+  .desktopmenu{
+    display: none;
+
+  }
+  .menubtn{
+    display: none;
+  }
+  
+}
+

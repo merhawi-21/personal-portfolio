@@ -1,0 +1,72 @@
+
+.works {
+  margin: 0 auto;
+  min-height: calc(100vh - 4rem);
+  width: 100vw;
+  max-width: 60rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem;
+  box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.3); /* Bottom shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.works:hover {
+  transform: scale(1.05); /* Slightly zoom in on hover */
+  background-color: rgba(0, 0, 0, 0.05); /* Light background color change on hover */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+
+.worksTitle{
+  margin: 1rem 0;
+  font-size: 3rem;
+}
+
+.workDescription{
+  font-weight: 300;
+  font-size: 1rem;
+  max-width: 45rem;
+
+}
+
+.Products{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100vw;
+  max-width: 65rem;
+}
+
+.productsImg{
+  object-fit: cover;
+  height: 10rem;
+  margin: 0.5rem;
+  border-radius: 1rem;
+}
+.productsImg:hover{
+  border: 1px solid yellowgreen;
+}
+
+.productsBtn{
+  margin: 3rem 0;
+  padding: 0.5rem 2.5rem;
+  border: none;
+  border-radius: 2rem;
+  background: yellowgreen;
+  cursor: pointer;
+}
+.productsBtn:hover{
+  background-color: rgb(146, 127, 39);
+}
+
+/* media querry starts */
+@media screen  and (max-width:585px){
+
+  .productsImg{
+    height: 48vw;
+  }
+  
+}

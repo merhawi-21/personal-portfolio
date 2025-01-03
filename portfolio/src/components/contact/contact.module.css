@@ -1,0 +1,120 @@
+.contactPage {
+  min-height: calc(100vh - 4rem);
+  width: 90vw;
+  max-width: 60rem;
+  margin: 0;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect */
+.contactPage:hover {
+  transform: scale(1.02); /* Slight zoom effect */
+  background-color: rgba(0, 0, 0, 0.05); /* Light background color change */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
+}
+
+/* Optional text decoration (change text color on hover) */
+.contactPage:hover h2, 
+.contactPage:hover p {
+  color: #0056b3; /* Change text color */
+}
+
+.contactPageTitle{
+  font-size: 3rem;
+  margin-bottom: 1rem;
+
+}
+
+.clientDesc{
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+.clientImgs{
+  margin: 1rem 0;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.clientImg{
+  object-fit: cover;
+  width: 23%;
+  min-width: 9rem;
+  margin: auto;
+  padding: 0.25rem;
+}
+
+.clients{
+  padding: 2rem;
+}
+
+.contactDesc{
+  pad: 1rem;
+  font-size:medium;
+  font-weight: 300;
+}
+
+.contactForm{
+  margin: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  /* max-width: 65rem; */
+}
+
+.name, .email, .message{
+  font-size: medium;
+  width: 70%;
+  /* min-width: 40rem; */
+  margin:0.5rem ;
+  padding: 0.5rem 1rem;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  background: rgb(40, 40, 40) ;
+}
+
+.submitBtn{
+  background: yellowgreen;
+  border: none;
+  border-radius: 1rem;
+  margin: 2rem;
+  padding: 0.75rem 3.5rem;
+  cursor: pointer;
+}
+
+.submitBtn:hover{
+  background-color: rgb(146, 127, 39);
+}
+
+.links{
+  display: flex;
+ 
+}
+
+.link{
+  object-fit: cover;
+  height: 3rem;
+  width: 3rem;
+  margin: 0 0.75rem;
+  border-radius: 30%;
+}
+
+.link:hover{
+  transform: rotate(45deg);
+  transition: transform 0.3s ease;
+}
+
+/* @media starts */
+

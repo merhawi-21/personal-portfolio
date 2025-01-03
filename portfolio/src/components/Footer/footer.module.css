@@ -1,0 +1,32 @@
+.footer {
+  width: 100%; /* Ensure it always spans the full width */
+  height: 4rem; /* Fixed height */
+  background: rgb(40, 40, 40); /* Background color */
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping if content overflows */
+  align-items: center; /* Center items vertically */
+  justify-content: center; /* Center items horizontally */
+  font-weight: 300;
+  font-size: small;
+  position: fixed; /* Stick to the bottom of the viewport */
+  bottom: 0;
+  left: 0;
+  box-sizing: border-box; /* Ensure padding doesn't affect dimensions */
+  transition: background 0.3s ease, transform 0.3s ease; /* Smooth transitions for background and transform */
+}
+
+.footer:hover {
+  background: rgb(60, 60, 60); /* Lighter shade on hover */
+  transform: translateY(-5px); /* Slightly raise the footer on hover */
+}
+
+/* Example for hover on links inside footer */
+.footer a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease; /* Smooth transition for text color */
+}
+
+.footer a:hover {
+  color: #ffa500; /* Change text color on hover */
+}
