@@ -32,7 +32,7 @@ const Works = () => {
             <img src={evangadiImg} alt="" className={classes.productsImg} /> 
           </a>
 
-          <a href='https://amazon123-clone.netlify.app/' target='_blank'>
+          <a href='https://merhawi-21.github.io/personal-portfolio/' target='_blank'>
             <img src={profileImg} alt="" className={classes.productsImg} /> 
           </a>
           
